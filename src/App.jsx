@@ -22,7 +22,7 @@ function App() {
             <Route path="/css" element={<QuestionList category="CSS" questions={cssQuestions} />} />
             <Route path="/javascript" element={<QuestionList category="JavaScript" questions={javascriptQuestions} />} />
             <Route path="/react" element={<QuestionList category="React" questions={reactQuestions} />} />
-            {/* <Route path="/node" element={<QuestionList category="Node.js" questions={nodeQuestions} />} /> */}
+            <Route path="/node" element={<QuestionList category="Node.js" questions={nodeQuestions} />} />
             <Route path="/express" element={<QuestionList category="Express.js" questions={expressQuestions} />} />
             <Route path="/mongodb" element={<QuestionList category="MongoDB" questions={mongoQuestions} />} />
           </Routes>

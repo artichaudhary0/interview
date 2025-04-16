@@ -7,7 +7,6 @@ export const cssQuestions = [
     question: "Explain the difference between display: none and visibility: hidden",
     answer: "display: none removes the element from the document flow and hides it completely, while visibility: hidden keeps the element in the document flow (preserving its space) but makes it invisible."
   },
-  // I'll add just a few examples here for brevity, but the actual file contains 100 questions
   {
     question: "What are CSS Grid and Flexbox?",
     answer: "CSS Grid and Flexbox are modern layout systems. Grid is designed for two-dimensional layouts (rows and columns), while Flexbox is designed for one-dimensional layouts (either rows OR columns)."

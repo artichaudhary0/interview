@@ -35,21 +35,6 @@ const z = 3; // Block-scoped, cannot be reassigned`
     }
   ],
   react: [
-    {
-      question: "What are hooks in React?",
-      answer: "Hooks are functions that allow you to use state and other React features in functional components. Common hooks include useState, useEffect, useContext, useRef, and useMemo.",
-      code: `function Example() {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    document.title = \`Count: \${count}\`;
-  }, [count]);
-  return <button onClick={() => setCount(count + 1)}>{count}</button>;
-}`
-    },
-    {
-      question: "Explain the virtual DOM.",
-      answer: "The virtual DOM is a lightweight copy of the actual DOM. React uses it to improve performance by minimizing direct manipulation of the DOM. When state changes, React first updates the virtual DOM, compares it with the previous version, and then efficiently updates only the necessary parts of the actual DOM."
-    }
   ],
   node: [
     {
