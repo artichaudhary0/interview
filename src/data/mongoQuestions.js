@@ -373,5 +373,96 @@ db.users.deleteOne({ name: "John" });`
   {
     question: "What is the use of MongoURI?",
     answer: "MongoURI is a connection string format used to connect to MongoDB instances."
+  },{
+    question: "What is a capped collection in MongoDB?",
+    answer: "A capped collection is a fixed-size collection that automatically overwrites its oldest entries when it reaches its size limit."
+  },
+  {
+    question: "How do you create a capped collection?",
+    answer: "Use the `createCollection` method with the `capped` and `size` options.",
+    code: `db.createCollection("logs", { capped: true, size: 100000 })`
+  },
+  {
+    question: "What does the $slice operator do?",
+    answer: "$slice limits the number of items returned from an array.",
+    code: `db.posts.find({}, { comments: { $slice: 5 } })`
+  },
+  {
+    question: "How can you update multiple fields in a single update operation?",
+    answer: "Use the `$set` operator with multiple field-value pairs.",
+    code: `db.users.updateOne({ name: "John" }, { $set: { age: 32, active: true } })`
+  },
+  {
+    question: "What is a MongoDB collection validator?",
+    answer: "Validators enforce schema rules at the collection level using expressions like `$jsonSchema`, `$or`, `$and`, etc."
+  },
+  {
+    question: "What does $project do in aggregation?",
+    answer: "$project reshapes each document in the pipeline by including, excluding, or adding new fields.",
+    code: `db.users.aggregate([{ $project: { name: 1, age: 1 } }])`
+  },
+  {
+    question: "What is the $group stage in aggregation?",
+    answer: "$group groups documents by a specified identifier and performs accumulations like `$sum`, `$avg`, etc.",
+    code: `db.sales.aggregate([{ $group: { _id: "$product", total: { $sum: "$amount" } } }])`
+  },
+  {
+    question: "What is the use of the $match stage in aggregation?",
+    answer: "$match filters documents in the aggregation pipeline, similar to the find() query.",
+    code: `db.orders.aggregate([{ $match: { status: "delivered" } }])`
+  },
+  {
+    question: "How to sort results in aggregation?",
+    answer: "Use the $sort stage with fields and sort directions.",
+    code: `db.products.aggregate([{ $sort: { price: -1 } }])`
+  },
+  {
+    question: "What is the $unwind stage in aggregation?",
+    answer: "$unwind deconstructs an array field into multiple documents, one per array element.",
+    code: `db.orders.aggregate([{ $unwind: "$items" }])`
+  },
+  {
+    question: "How do you check the size of a collection?",
+    answer: "Use `db.collection.stats()` or `db.collection.countDocuments()`."
+  },
+  {
+    question: "How can you rename a field in all documents?",
+    answer: "Use the `$rename` operator.",
+    code: `db.users.updateMany({}, { $rename: { "fullname": "name" } })`
+  },
+  {
+    question: "How do you drop a collection?",
+    answer: "Use the `drop()` method.",
+    code: `db.logs.drop()`
+  },
+  {
+    question: "How do you drop a database?",
+    answer: "Use the `db.dropDatabase()` method.",
+    code: `use test; db.dropDatabase();`
+  },
+  {
+    question: "How can you find the distinct values of a field?",
+    answer: "Use the `distinct()` method.",
+    code: `db.users.distinct("country")`
+  },
+  {
+    question: "What is GridFS in MongoDB?",
+    answer: "GridFS is a specification for storing and retrieving large files like images or videos in MongoDB by splitting them into chunks."
+  },
+  {
+    question: "What are MongoDB sessions?",
+    answer: "Sessions are used to group operations together, often for transactions or causal consistency."
+  },
+  {
+    question: "What is sharding in MongoDB?",
+    answer: "Sharding is a method for distributing data across multiple machines to support horizontal scaling."
+  },
+  {
+    question: "What is a shard key?",
+    answer: "A shard key determines how data is distributed across shards in a sharded MongoDB cluster."
+  },
+  {
+    question: "What is a mongos?",
+    answer: "mongos is the routing service that directs queries to the appropriate shard in a MongoDB sharded cluster."
   }
 ];
