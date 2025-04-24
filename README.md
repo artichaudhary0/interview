@@ -1,4 +1,4 @@
-# This is repo for interview questions 
+# This is repo for interview questions 100 question of each 
 
 # html css javascript node react express mongo
 Currently, two official plugins are available:
