@@ -1,7 +1,30 @@
-# This is repo for interview questions 100 question of each 
+# 📘 100+ HTML, CSS, JAVASCRIPT, MERN. Interview Questions and Answers
 
-# html css javascript node react express mongo
-Currently, two official plugins are available:
+Welcome to the **Express.js Interview Questions Repository**! This repo is a collection of 100+ carefully curated questions and answers that cover essential concepts, coding practices, and advanced features of Express.js. Great for developers preparing for interviews, revising concepts, or teaching others.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 📌 About Express.js
+
+[Express.js](https://expressjs.com/) is a fast, unopinionated, minimalist web framework for Node.js. It simplifies the process of building robust APIs and web applications, offering routing, middleware support, and more.
+
+---
+
+## 🧠 What's Included?
+
+- ✅ Basic to Advanced Express.js Questions
+- ✅ Code Examples
+- ✅ Middleware Concepts
+- ✅ Routing, Authentication, and Error Handling
+- ✅ RESTful API Examples
+- ✅ Modular Routing, CORS, Sessions, File Uploads
+
+---
+
+## 📂 File Structure
+
+```bash
+express-questions/
+│
+├── expressQuestions.js  # Contains 100+ Q&A in exportable JS object format
+├── README.md            # You are here
