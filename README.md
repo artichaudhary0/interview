@@ -1,4 +1,4 @@
-# 📘 100+ HTML, CSS, JAVASCRIPT, MERN. Interview Questions and Answers
+# 📘 100+ HTML, CSS, JAVASCRIPT, MERN and SQL Interview Questions and Answers
 
 Welcome to the **Express.js Interview Questions Repository**! This repo is a collection of 100+ carefully curated questions and answers that cover essential concepts, coding practices, and advanced features of Express.js. Great for developers preparing for interviews, revising concepts, or teaching others.
 
