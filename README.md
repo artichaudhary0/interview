@@ -12,7 +12,7 @@ Welcome to the **Express.js Interview Questions Repository**! This repo is a col
 
 ## 🧠 What's Included?
 
-- ✅ Basic to Advanced Express.js Questions
+- ✅ Basic to Advanced HTML, CSS, JAVASCRIPT, MERN and SQL Questions
 - ✅ Code Examples
 - ✅ Middleware Concepts
 - ✅ Routing, Authentication, and Error Handling
